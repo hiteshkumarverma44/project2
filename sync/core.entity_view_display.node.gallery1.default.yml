@@ -1,0 +1,50 @@
+uuid: a8831588-e320-4f5d-a59c-c542770ec6cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery1.body
+    - field.field.node.gallery1.field_date
+    - field.field.node.gallery1.field_images
+    - node.type.gallery1
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.gallery1.default
+targetEntityType: node
+bundle: gallery1
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

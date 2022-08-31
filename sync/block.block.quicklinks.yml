@@ -1,0 +1,36 @@
+uuid: b8013007-80d4-4b57-afa5-21378e163015
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.qu
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: quicklinks
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:qu'
+settings:
+  id: 'system_menu_block:qu'
+  label: 'Quick links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

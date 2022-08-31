@@ -1,0 +1,8 @@
+uuid: 1bacda4d-f5a8-4939-9b32-8bff77cd67c8
+langcode: en
+status: true
+dependencies: {  }
+name: 'gallery category'
+vid: gallery_category
+description: ''
+weight: 0

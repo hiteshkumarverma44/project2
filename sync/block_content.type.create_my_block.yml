@@ -1,0 +1,8 @@
+uuid: 705a75d4-e66d-4256-9432-a8ab9eae8162
+langcode: en
+status: true
+dependencies: {  }
+id: create_my_block
+label: 'create my block'
+revision: 0
+description: ''

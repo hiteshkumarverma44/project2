@@ -1,0 +1,18 @@
+uuid: 5bfba781-eaaa-45e6-a156-8947ee486117
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'export test 1'
+type: export_test_1
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

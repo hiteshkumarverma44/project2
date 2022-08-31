@@ -1,0 +1,21 @@
+uuid: dbc9b9a4-9be6-409e-8d0b-20c56fb152fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Send message'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: contact_us_
+label: 'Contact Us '
+recipients:
+  - hiteshkumarverma1996@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent successfully. We will contact you shortly.'
+redirect: ''

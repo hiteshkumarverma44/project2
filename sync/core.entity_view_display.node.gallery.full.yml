@@ -1,0 +1,45 @@
+uuid: 0bebd1eb-9319-4e81-adb8-3ecebb3120e0
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_category
+    - field.field.node.gallery.field_more1
+    - field.field.node.gallery.field_upload_image
+    - image.style.medium
+    - node.type.gallery
+  module:
+    - image
+    - text
+    - user
+id: node.gallery.full
+targetEntityType: node
+bundle: gallery
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_upload_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_category: true
+  field_more1: true

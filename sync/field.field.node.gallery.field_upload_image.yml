@@ -1,0 +1,38 @@
+uuid: 10c704e3-859b-481a-961b-213fb2ab6e5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_image
+    - node.type.gallery
+  module:
+    - image
+id: node.gallery.field_upload_image
+field_name: field_upload_image
+entity_type: node
+bundle: gallery
+label: 'upload image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ' Gallery Images'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: true
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

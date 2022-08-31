@@ -1,0 +1,33 @@
+uuid: 36375174-d70f-41df-b069-a62346aca7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.create_my_block
+    - field.field.block_content.create_my_block.body
+    - field.field.block_content.create_my_block.field_image
+  module:
+    - image
+    - text
+id: block_content.create_my_block.default
+targetEntityType: block_content
+bundle: create_my_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

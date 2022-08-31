@@ -1,0 +1,41 @@
+uuid: 646700ea-54b9-44df-87a0-06908a7620f0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5479fd7b-6013-4da6-89a6-c616c1d5e8ff'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bartik
+id: thisismyblock.
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:5479fd7b-6013-4da6-89a6-c616c1d5e8ff'
+settings:
+  id: 'block_content:5479fd7b-6013-4da6-89a6-c616c1d5e8ff'
+  label: 'This is my block.'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/about_us\r\n<front>\r\n"

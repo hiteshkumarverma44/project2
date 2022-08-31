@@ -1,0 +1,21 @@
+uuid: 38e779a3-707d-4ebb-ac7c-417d42cd9dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cd
+    - node.type.export_test_1
+  module:
+    - datetime
+id: node.export_test_1.field_cd
+field_name: field_cd
+entity_type: node
+bundle: export_test_1
+label: cd
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

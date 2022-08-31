@@ -1,0 +1,21 @@
+uuid: c4806c95-f8ff-44fb-9a21-2dfc0bce6143
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Send message'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: contact_form_2
+label: 'contact form 2'
+recipients:
+  - abc@abc.gmail
+reply: ''
+weight: 0
+message: ''
+redirect: ''

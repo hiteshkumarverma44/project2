@@ -1,0 +1,71 @@
+uuid: 1065963e-4f48-4d6d-84fa-12f0bb0927a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us_1
+    - field.field.contact_message.contact_us_1.field_date
+    - field.field.contact_message.contact_us_1.field_email1
+    - field.field.contact_message.contact_us_1.field_text1
+  module:
+    - datetime
+id: contact_message.contact_us_1.default
+targetEntityType: contact_message
+bundle: contact_us_1
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email1:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text1:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  mail:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  subject:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -1
+    region: content
+hidden: {  }

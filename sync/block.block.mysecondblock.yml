@@ -1,0 +1,39 @@
+uuid: e0560f0f-47ec-4b4b-9886-b27c7170c1f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:create_my_block:fa8686a9-43e7-4c84-9b36-5397b9976561'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bartik
+id: mysecondblock
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:fa8686a9-43e7-4c84-9b36-5397b9976561'
+settings:
+  id: 'block_content:fa8686a9-43e7-4c84-9b36-5397b9976561'
+  label: 'My Second Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/about_us"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      administrator: administrator
